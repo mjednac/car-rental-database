@@ -1,0 +1,88 @@
+
+-- DANE: AUTA
+
+INSERT INTO Auta (marka, model, rocznik, rodzaj_nadwozia, liczba_miejsc, skrzynia_biegow, cena_za_dzien, status) VALUES
+('Toyota', 'Corolla', 2021, 'sedan', 5, 'manualna', 120.00, 'Dostępne'),
+('Skoda', 'Octavia', 2020, 'combi', 5, 'manualna', 150.00, 'Dostępne'),
+('Ford', 'Focus', 2019, 'hatchback', 5, 'manualna', 130.00, 'Dostępne'),
+('BMW', 'M3', 2022, 'sedan', 5, 'automatyczna', 250.00, 'Dostępne'),
+('Audi', 'A3', 2021, 'hatchback', 5, 'automatyczna', 240.00, 'Dostępne'),
+('Volkswagen', 'Golf', 2018, 'hatchback', 5, 'manualna', 110.00, 'Dostępne'),
+('Kia', 'Sportage', 2022, 'SUV', 5, 'automatyczna', 180.00, 'Dostępne'),
+('Hyundai', 'Tucson', 2023, 'SUV', 5, 'automatyczna', 185.00, 'Dostępne'),
+('Mercedes-Benz', 'Klasa C', 2021, 'sedan', 5, 'automatyczna', 300.00, 'Dostępne'),
+('Volvo', 'XC60', 2022, 'SUV', 5, 'automatyczna', 320.00, 'Dostępne'),
+('Renault', 'Clio', 2017, 'hatchback', 5, 'manualna', 90.00, 'Dostępne'),
+('Peugeot', '308', 2019, 'hatchback', 5, 'manualna', 95.00, 'Dostępne'),
+('Dacia', 'Duster', 2020, 'SUV', 5, 'manualna', 100.00, 'Dostępne'),
+('Subaru', 'Outback', 2021, 'combi', 5, 'automatyczna', 210.00, 'W naprawie'),
+('Honda', 'Civic', 2020, 'sedan', 5, 'manualna', 140.00, 'Dostępne'),
+('Fiat', '500', 2018, 'hatchback', 4, 'manualna', 80.00, 'Dostępne'),
+('Mazda', 'CX-5', 2022, 'SUV', 5, 'automatyczna', 220.00, 'Dostępne'),
+('Opel', 'Astra', 2019, 'combi', 5, 'manualna', 105.00, 'Dostępne'),
+('Nissan', 'Qashqai', 2021, 'SUV', 5, 'manualna', 170.00, 'Dostępne'),
+('Audi', 'RS6', 2023, 'combi', 5, 'automatyczna', 450.00, 'Dostępne'),
+('Mini', 'Cooper Cabrio', 2020, 'cabriolet', 4, 'automatyczna', 190.00, 'Dostępne'),
+('BMW', 'Z4', 2022, 'cabriolet', 2, 'automatyczna', 370.00, 'Dostępne'),
+('Mercedes-Benz', 'GLC', 2023, 'SUV', 5, 'automatyczna', 360.00, 'Dostępne'),
+('Seat', 'Leon', 2020, 'hatchback', 5, 'manualna', 115.00, 'Dostępne'),
+('Cupra', 'Formentor', 2022, 'SUV', 5, 'automatyczna', 260.00, 'Dostępne'),
+('Toyota', 'Yaris', 2018, 'hatchback', 5, 'manualna', 85.00, 'Dostępne'),
+('Volkswagen', 'Passat', 2020, 'combi', 5, 'automatyczna', 160.00, 'Dostępne'),
+('Tesla', 'Model 3', 2023, 'sedan', 5, 'automatyczna', 390.00, 'Dostępne'),
+('Porsche', 'Macan', 2022, 'SUV', 5, 'automatyczna', 520.00, 'Dostępne'),
+('Ford', 'Mustang Convertible', 2021, 'cabriolet', 4, 'automatyczna', 430.00, 'Dostępne'),
+('Citroen', 'C4', 2019, 'hatchback', 5, 'manualna', 100.00, 'Dostępne'),
+('Renault', 'Megane Grandtour', 2020, 'combi', 5, 'manualna', 120.00, 'Dostępne'),
+('Volvo', 'S60', 2021, 'sedan', 5, 'automatyczna', 240.00, 'Dostępne'),
+('Jeep', 'Renegade', 2020, 'SUV', 5, 'automatyczna', 210.00, 'W naprawie'),
+('Skoda', 'Fabia', 2017, 'hatchback', 5, 'manualna', 75.00, 'Dostępne');
+
+
+-- DANE: KLIENCI
+
+INSERT INTO Klienci (imie, nazwisko, pesel) VALUES
+('Robert', 'Kubica', '84120712345'),
+('Michael', 'Schumacher', '69010322334'),
+('Ayrton', 'Senna', '60032155443'),
+('Lewis', 'Hamilton', '85010799887'),
+('Max', 'Verstappen', '97093011223'),
+('Fernando', 'Alonso', '81072944556'),
+('Sebastian', 'Vettel', '87070366778'),
+('Kimi', 'Raikkonen', '79101788776'),
+('Charles', 'Leclerc', '97101655667'),
+('Carlos', 'Sainz', '94090144332'),
+('Sebastien', 'Loeb', '74022699001'),
+('Colin', 'McRae', '68080511221'),
+('Mika', 'Hakkinen', '68092833112'),
+('Nico', 'Rosberg', '85062777331'),
+('Lando', 'Norris', '99111355112'),
+('Oscar', 'Piastri', '01040688991'),
+('George', 'Russell', '98021522331'),
+('Valtteri', 'Bottas', '89082844112'),
+('Daniel', 'Ricciardo', '89070166771'),
+('Jenson', 'Button', '80011944321');
+
+-- DANE: WYPOŻYCZENIA
+
+INSERT INTO Wypozyczenia (id_klienta, id_auta, data_od, data_do) VALUES
+(2, 1, '2026-06-01', '2026-06-10'),
+(3, 5, '2026-06-03', '2026-06-05'),
+(4, 7, '2026-06-10', '2026-06-20'),
+(5, 2, '2026-05-20', '2026-05-25'),
+(6, 15, '2026-06-01', '2026-06-04'),
+(7, 10, '2026-05-10', '2026-05-18'),
+(8, 17, '2026-05-12', '2026-05-15'),
+(9, 20, '2026-05-19', '2026-05-21'),
+(10, 22, '2026-05-22', '2026-05-24'),
+(11, 23, '2026-05-28', '2026-06-02'),
+(12, 24, '2026-06-04', '2026-06-08'),
+(13, 25, '2026-06-05', '2026-06-12'),
+(14, 27, '2026-06-01', '2026-06-06'),
+(15, 28, '2026-06-09', '2026-06-11'),
+(16, 29, '2026-06-10', '2026-06-13'),
+(17, 30, '2026-06-12', '2026-06-16'),
+(18, 31, '2026-06-15', '2026-06-19'),
+(19, 32, '2026-06-17', '2026-06-21'),
+(20, 33, '2026-06-20', '2026-06-23'),
+(1, 35, '2026-06-22', '2026-06-25');
